@@ -1,0 +1,58 @@
+<!-- Código HTML site -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor</title>
+  <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/019/860/394/non_2x/thermometer-icon-colorful-free-png.png" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="container">
+  <h1 class="page-title">
+    CONVERSOR DE TEMPERATURA
+  </h1>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+
+  <p class="page-subtitle">
+    <b>➯ Escolha a unidade de partida e a que deseja:<b>
+  </p><br>
+  <div class="conversor__valores">
+    <div class="seletor">
+      <select name="convertede" id="convertede">
+        <option value="de">Converter de</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+        <option value="Rankine">Rankine</option>
+        <option value="Réaumur">Réaumur</option>
+      </select>
+
+      <select name="convertepara" id="convertepara">
+        <option value="para">para</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+        <option value="Rankine">Rankine</option>
+        <option value="Réaumur">Réaumur</option>
+      </select>
+    </div>
+    <label for="converter">
+      <input type="number" id="valor">
+    </label>
+    <button type="submit" class="bt_converter" onclick="Converter()">Converter</button><br><br>
+    <h2 id="valorConvertido"></h2><br>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+  <footer>
+    <br><br>
+    <p class="footer">Desenvolvido por <a href="https://github.com/LuizaPG12">Luiza12</a> #imersaodev</p><br>
+  </footer>
+
